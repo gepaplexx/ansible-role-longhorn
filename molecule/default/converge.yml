@@ -1,0 +1,10 @@
+---
+- name: Converge
+  hosts:
+    - longhorn_executor
+    - longhorn_nodes
+  connection: docker
+  gather_facts: false
+  roles:
+    - role: gepaplexx.longhorn
+...
